@@ -12,3 +12,25 @@
     <p>97 Bowling Alley Lane, Boulder CO </p>
   </body>
 </html>
+##html code above and erb code below
+<%= "I love " + "Ruby!!" %>
+##LINE 16 can go in between h2> line 16 code/h2> because the squic is used for evaluation just like if we put 1+1 it would output 2 on screen
+
+<% if 1 == 2 %>
+  <p>1 equals 2.</p>
+<% else %>
+  <p>1 does not equal 2.</p>
+<% end %>
+
+
+<% wall_posts = ["First post!", "Second post!", "Hello, it's your mother. Why don't you ever call me?"] %>
+
+<ul>
+  <% wall_posts.each do |post| %>
+    <li><%= post %></li>
+  <% end %>
+</ul>
+
+
+
+
